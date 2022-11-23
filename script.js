@@ -2,6 +2,7 @@ function changeDivBG() {
     var navBar = document.getElementById('navBG');
     var navBarUL = document.getElementById('navUL');
     var scrollValue = window.scrollY;
+    var tous = document.getElementById('tours');
     if (scrollValue > 600 && scrollValue<650) {
         navBar.classList.add('navbar-BG1');
         navBarUL.classList.add('navbar-BG1');
