@@ -103,7 +103,7 @@ body {
 }
 
 .carousel-caption {
-    bottom: 220px;
+    /* bottom: 220px; */
     z-index: 2;
 }
 
@@ -165,15 +165,15 @@ body {
         font-size: xx-large;
     }
 
-    .carousel-caption {
+    .carousel1-caption {
         bottom: 350px;
     }
 
-    .carousel-caption h5 {
+    .carousel1-caption h5 {
         font-size: 65px;
     }
 
-    .carousel-caption p {
+    .carousel1-caption p {
         font-size: 18px;
         width: 100%;
     }
@@ -188,20 +188,20 @@ body {
         color: #1f434e;
     }
 
-    .carousel-caption {
+    .carousel1-caption {
         bottom: 165px;
     }
 
-    .carousel-caption h5 {
+    .carousel1-caption h5 {
         font-size: 25px;
     }
 
-    .carousel-caption p {
+    .carousel1-caption p {
         font-size: 12px;
         width: 100%;
     }
 
-    .carousel-caption a {
+    .carousel1-caption a {
         padding: 10px 15px;
         font-size: 15px;
     }
