@@ -19,6 +19,13 @@ body {
     font-size: medium;
 }
 
+/* .logo{
+    margin-left: 50px;
+} */
+.logo{
+    width: 200px;
+}
+
 .navbar-light{
     background-color: white;
 }
@@ -236,7 +243,7 @@ body {
 
 .gallery {
     background-color: rgb(232, 239, 187);
-    height: 100vh;
+    height: fit-content;
     width: 100%;
 }
 
@@ -254,7 +261,7 @@ body {
     margin: 25px;
     margin-left: 150px;
     margin-right: 150px;
-    margin-top: 24vh;
+    /* margin-top: 24vh; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -268,7 +275,7 @@ body {
     justify-content: center;
 }
 .gallery_content ul li img{
-    width: 290px;
+    width: 310px;
     margin: 10px;
     padding: 0px;
     margin-top:30px;
