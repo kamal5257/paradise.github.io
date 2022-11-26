@@ -4,6 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: white;
+  font-weight: bold;
+  color: #367588;
+}
+
+.logo{
+  width: 200px;
+  
 }
 ::selection{
   color: #fff;
@@ -24,8 +32,12 @@ body{
   display: flex;
   max-width: 800px;
   width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
+
+
 .items span{
   padding: 7px 25px;
   font-size: 18px;
@@ -35,6 +47,7 @@ body{
   border-radius: 50px;
   border: 2px solid #007bff;
   transition: all 0.3s ease;
+  margin: 5px;
 }
 .items span.active,
 .items span:hover{
@@ -185,5 +198,4 @@ body{
   transition: all 0.3s ease;
   color: #fff;
   background: #367588;
-}
 }
