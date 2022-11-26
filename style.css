@@ -80,19 +80,19 @@ body {
 }
 
 .bg-1 {
-    background-image: url(camera_photographer_smoke_126548_3840x2160.jpg);
+    background-image: url("trip to Paradise photo and video/uk and hp/AULI/amit-shaw-Ce-kskvzAAE-unsplash.jpg");
 }
 
 .bg-2 {
-    background-image: url(tree-2976739_1280.jpg);
+    background-image: url("trip to Paradise photo and video/uk and hp/AULI/aniket-mandish-3cunzsPf3U4-unsplash.jpg");
 }
 
 .bg-3 {
-    background-image: url(wallpp.jpg);
+    background-image: url("trip to Paradise photo and video/uk and hp/chopta/Chopta-Tungnath-Trek-Tour-from-Rishikesh.jpg");
 }
 
 .bg-4 {
-    background-image: url(dark-desktop.jpg);
+    background-image: url("trip to Paradise photo and video/uk and hp/BADRINATH/avi-theret-GaKmf7Bcviw-unsplash.jpg");
 }
 
 .bg-1,
@@ -437,6 +437,7 @@ body {
     padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
+    padding-bottom: 50px;
 }
 
 .accordation .accord-heading{
@@ -476,6 +477,6 @@ body {
     text-align: justify;
 }
 
-.active {
+.accordation .accord-content ul li h4.active {
     color: rebeccapurple;
 }

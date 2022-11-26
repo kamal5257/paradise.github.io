@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Image Gallery | CodingNepal</title>
+    <link rel="stylesheet" href="style_gal.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="jquery.flipster.min.css">
+	<link rel="stylesheet" href="../fonts/icomoon/style.css">
+</head>
+<body>
+
+  <div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close mt-3">
+				<span class="icon-close2 js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner" style="box-shadow: 5px 5px 5px grey; position: fixed;">
+
+		<div class="container">
+			<div class="row align-items-center">
+
+				<div class="col-6 col-xl-2">
+					<h1 class="mb-0 site-logo"><a href="#carouselExampleCaptions"><img src="../TTP logo 2.jpeg" class="logo"> </a></h1>
+				</div>
+
+				<div class="col-12 col-md-10 d-none d-xl-block">
+					<nav class="site-navigation position-relative text-right" role="navigation">
+
+						<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block" id="items">							
+							
+              <li><a href="#" class="item nav-link" data-name="all">All</a>                 </li>
+              <li><a href="#" class="item nav-link" data-name="Chardham">Chardham</a>       </li>
+              <li><a href="#" class="item nav-link" data-name="Dehradun">Dehradun</a>       </li>
+              <li><a href="#" class="item nav-link" data-name="Kedarnath">Kedarnath</a>     </li>
+              <li><a href="#" class="item nav-link" data-name="Badrinath">Badrinath</a>     </li>
+              <li><a href="#" class="item nav-link" data-name="Yamunotri">Yamunotri</a>     </li>
+              <li><a href="#" class="item nav-link" data-name="Gangotri">Gangotri</a>       </li>
+              <li><a href="#" class="item nav-link" data-name="Auli">Auli</a>               </li>
+              <li><a href="#" class="item nav-link" data-name="Haridwar">Haridwar</a>       </li>
+              <li><a href="#" class="item nav-link" data-name="Rishikesh">Rishikesh</a>     </li>
+              <li><a href="#" class="item nav-link" data-name="Nainital">Nainital</a>       </li>
+              <li><a href="#" class="item nav-link" data-name="Hemkund">Hemkund</a>         </li>
+              <li><a href="#" class="item nav-link" data-name="Mussoorie">Mussoorie</a>     </li>
+              <li><a href="#" class="item nav-link" data-name="Chopta">Chopta</a>           </li>
+              <li><a href="#" class="item nav-link" data-name="Tungnath">Chopta</a>         </li>
+              <li><a href="#" class="item nav-link" data-name="Valley of Flowers">Chopta</a></li>
+							
+							
+						</ul>
+					</nav>
+				</div>
+
+
+				<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
+						href="#" class="site-menu-toggle js-menu-toggle float-right"><span
+							class="icon-menu h3" style="font-size: 2.75rem;"></span></a></div>
+
+			</div>
+		</div>
+
+	</header>
+  
+  <div class="wrapper">
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="Chardham">Chardham</span>
+        <span class="item" data-name="Dehradun">Dehradun</span>
+        <span class="item" data-name="Kedarnath">Kedarnath</span>
+        <span class="item" data-name="Badrinath">Badrinath</span>
+        <span class="item" data-name="Yamunotri">Yamunotri</span>
+        <span class="item" data-name="Gangotri">Gangotri</span>
+        <span class="item" data-name="Auli">Auli</span>
+        <span class="item" data-name="Haridwar">Haridwar</span>
+        <span class="item" data-name="Rishikesh">Rishikesh</span>
+        <span class="item" data-name="Nainital">Nainital</span>
+        <span class="item" data-name="Hemkund">Hemkund</span>
+        <span class="item" data-name="Mussoorie">Mussoorie</span>
+        <span class="item" data-name="Chopta">Chopta</span>
+        <span class="item" data-name="Tungnath">Chopta</span>
+        <span class="item" data-name="Valley of Flowers">Chopta</span>
+        <!-- <select class="item">
+          <option class="item" data-name="all">All</option>
+          <option class="item" data-name="Chardham">Chardham</option>
+          <option class="item" data-name="Dehradun">Dehradun</option>
+          <option class="item" data-name="Kedarnath">Kedarnath</option>
+          <option class="item" data-name="Badrinath">Badrinath</option>
+          <option class="item" data-name="Yamunotri">Yamunotri</option>
+          <option class="item" data-name="Gangotri">Gangotri</option>
+          <option class="item" data-name="Auli">Auli</option>
+          <option class="item" data-name="Haridwar">Haridwar</option>
+          <option class="item" data-name="Rishikesh">Rishikesh</option>
+          <option class="item" data-name="Nainital">Nainital</option>
+          <option class="item" data-name="Hemkund">Hemkund</option>
+          <option class="item" data-name="Mussoorie">Mussoorie</option>
+          <option class="item" data-name="Chopta">Chopta</option>
+          <option class="item" data-name="Tungnath">Chopta</option>
+          <option class="item" data-name="Valley of Flowers">Chopta</option>
+        </select>   -->
+      </div>
+    </nav>
+    <!-- filter Images -->
+    <a href="../index.html"> <button class="home"><i class="fas fa-caret-left"></i>&nbsp&nbsp Home Page</button></a>
+    <div class="gallery">
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/amit-shaw-Ce-kskvzAAE-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/aniket-mandish-3cunzsPf3U4-unsplash.jpg""></span></div>
+      
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/deepak-mehra-_QR5d5ZzFlg-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/rahul-ranjan-zYpfHpdV7q8-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/anuj-yadav-9f2DMB_bGSg-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/sandeep-rana-PblTA6onlYM-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/swarnarekha-pandey-tJWC47JDT9g-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Auli"><span><img src="../trip to Paradise photo and video/uk and hp/AULI/vishwanath-negi-qZaXh7_Hwa0-unsplash.jpg" alt=""></span></div>
+     
+      <div class="image" data-name="Badrinath"><span><img src="../trip to Paradise photo and video/uk and hp/BADRINATH/1435811-badrinath-is-mentioned-in-puranas-and-mahabharata-lord-vishnu-is-seated-here.jpg" alt=""></span></div>
+      <div class="image" data-name="Badrinath"><span><img src="../trip to Paradise photo and video/uk and hp/BADRINATH/295b71f8574c5d744dd71d92ac0e7f7f_original.webp" alt=""></span></div>
+      <div class="image" data-name="Badrinath"><span><img src="../trip to Paradise photo and video/uk and hp/BADRINATH/avi-theret-2u6eLolV1JY-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Badrinath"><span><img src="../trip to Paradise photo and video/uk and hp/BADRINATH/avi-theret-GaKmf7Bcviw-unsplash.jpg" alt=""></span></div>
+      <div class="image" data-name="Badrinath"><span><img src="../trip to Paradise photo and video/uk and hp/BADRINATH/avi-theret-PYMXQjss01c-unsplash.jpg" alt=""></span></div>
+      
+    </div>
+    <a href="../index.html"> <button class="home"><i class="fas fa-caret-left"></i>&nbsp&nbsp Home Page</button></a>
+  </div>
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+      <span class="icon fas fa-times"></span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+
+  <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.sticky.js"></script>
+    <script src="../js/main.js"></script>
+  <script src="script_gal.js"></script>
+
+</body>
+</html>
