@@ -80,19 +80,19 @@ body {
 }
 
 .bg-1 {
-    background-image: url("trip to Paradise photo and video/uk and hp/AULI/amit-shaw-Ce-kskvzAAE-unsplash.jpg");
+    background-image: url("assets/uk and hp/AULI/amit-shaw-Ce-kskvzAAE-unsplash.jpg");
 }
 
 .bg-2 {
-    background-image: url("trip to Paradise photo and video/uk and hp/AULI/aniket-mandish-3cunzsPf3U4-unsplash.jpg");
+    background-image: url("assets/uk and hp/AULI/aniket-mandish-3cunzsPf3U4-unsplash.jpg");
 }
 
 .bg-3 {
-    background-image: url("trip to Paradise photo and video/uk and hp/chopta/Chopta-Tungnath-Trek-Tour-from-Rishikesh.jpg");
+    background-image: url("assets/uk and hp/chopta/Chopta-Tungnath-Trek-Tour-from-Rishikesh.jpg");
 }
 
 .bg-4 {
-    background-image: url("trip to Paradise photo and video/uk and hp/BADRINATH/avi-theret-GaKmf7Bcviw-unsplash.jpg");
+    background-image: url("assets/uk and hp/BADRINATH/avi-theret-GaKmf7Bcviw-unsplash.jpg");
 }
 
 .bg-1,
@@ -279,6 +279,7 @@ body {
     width: 340px;
     margin: 10px;
     padding: 0px;
+    border-radius: 0 10% 0 10%;
     margin-top:30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }

@@ -81,11 +81,11 @@ a:hover {
   margin-bottom: 0;
 }
 
-.site-navbar .site-navigation .site-menu .active {
+/* .site-navbar .site-navigation .site-menu .active {
   color: #007bff;
   display: inline-block;
   padding: 20px 20px;
-}
+} */
 
 .site-navbar .site-navigation .site-menu a {
   text-decoration: none !important;
